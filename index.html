@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sachmoi - Kho Sách Chất Lượng</title>
+    <link rel="icon" type="image/gif" href="images/favicon.gif" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/deff8491e4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo" aria-hidden="false">
+        <img src="images/favicon.gif" alt="Sachmoi Logo" />
+        <h1>Sachmoi</h1>
+      </div>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Mở menu" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav class="menu" id="mainNav" aria-label="Main navigation">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-house" aria-hidden="true"></i>
+                <span>Trang chủ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-list" aria-hidden="true"></i>
+                <span>Danh mục</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-user" aria-hidden="true"></i>
+                <span>Tác giả</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-bell" aria-hidden="true"></i>
+                <span>Thông báo</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
+                <span>Giỏ hàng</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+                <span>Tài khoản</span>
+              </a>
+            </li>
+          </ul>
+      </nav>
+
+      <div class="search" id="searchWrap" role="search">
+        <input id="searchInput" type="text" placeholder="Nhập từ khóa" aria-label="Tìm kiếm sách" />
+        <button id="searchButton" type="button"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <p>"Kho sách trực tuyến với đa dạng thể loại và chất lượng cao."</p>
+      
+      <h2>Danh mục sách nổi bật</h2>
+      <div class="book-grid">
+        <div class="book-card" data-desc="Mô tả: Cuốn sách giúp bạn khám phá bản thân và trân trọng tuổi trẻ.">
+          <img src="images/book1.jpg" alt="book1">
+          <h3>Tuổi Trẻ Đáng Giá Bao Nhiêu</h3>
+          <p class="price">95.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Câu chuyện triết lý về hành trình tìm kiếm ước mơ và định mệnh.">
+          <img src="images/book2.jpg" alt="book2">
+          <h3>Nhà Giả Kim</h3>
+          <p class="price">80.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Hướng dẫn nghệ thuật giao tiếp và xây dựng mối quan hệ thành công.">
+          <img src="images/book3.jpg" alt="book3">
+          <h3>Đắc Nhân Tâm</h3>
+          <p class="price">90.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Phát triển thói quen tích cực để đạt hiệu quả trong cuộc sống và công việc.">
+          <img src="images/book4.jpg" alt="book4">
+          <h3>7 Thói Quen Hiệu Quả</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Câu chuyện về tình bạn, tình yêu và những bài học cuộc sống sâu sắc.">
+          <img src="images/book5.jpg" alt="book5">
+          <h3>Hoàng Tử Bé</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Hành trình cảm động về tình cảm gia đình và sự trưởng thành.">
+          <img src="images/book6.jpg" alt="book6">
+          <h3>Không Gia Đình</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Phương pháp tư duy giúp bạn đạt được thành công trong cuộc sống và sự nghiệp.">
+          <img src="images/book7.jpg" alt="book7">
+          <h3>Cách Nghĩ Để Thành Công</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Cuốn sách khám phá triết lý phương Đông và hành trình tâm linh.">
+          <img src="images/book8.jpg" alt="book8">
+          <h3>Hành Trình Về Phương Đông</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Cuốn sách giúp bạn học cách buông bỏ lo âu để tận hưởng cuộc sống.">
+          <img src="images/book9.jpg" alt="book9">
+          <h3>Quẳng Gánh Lo Đi Và Vui Sống</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Tuyển tập những câu chuyện truyền cảm hứng và bài học cuộc sống ý nghĩa.">
+          <img src="images/book10.jpg" alt="book10">
+          <h3>Hạt Giống Tâm Hồn</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Hướng dẫn phát triển thói quen để đạt được thành công và hạnh phúc.">
+          <img src="images/book11.jpg" alt="book11">
+          <h3>7 Thói Quen Để Thành Đạt</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Cuốn sách truyền cảm hứng về sự thay đổi bản thân để thay đổi cuộc sống.">
+          <img src="images/book12.jpg" alt="book12">
+          <h3>Đời Thay Đổi Khi Chúng Ta Đổi Thay</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Tiểu thuyết kinh điển về tội ác, hình phạt và sự chuộc tội.">
+          <img src="images/book13.jpg" alt="book13">
+          <h3>Tội Ác Và Hình Phạt</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Cuốn sách kể về hành trình của một phi công trẻ và những giấc mơ bay cao.">
+          <img src="images/book14.jpg" alt="book14">
+          <h3>Trên Đường Băng</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Tiểu thuyết về cuộc sống và những mối quan hệ phức tạp giữa con người.">
+          <img src="images/book15.jpg" alt="book15">
+          <h3>Cuốn Theo Chiều Gió</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card" data-desc="Mô tả: Cuốn tiểu thuyết về tình yêu và sự hy sinh trong chiến tranh.">
+          <img src="images/book16.jpg" alt="book16">
+          <h3>Người Xa Lạ</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+      </div>
+
+      <h2>Danh mục sách bán chạy</h2>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="images/book1.jpg" alt="book1">
+          <h3>Tuổi Trẻ Đáng Giá Bao Nhiêu</h3>
+          <p class="price">95.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book2.jpg" alt="book2">
+          <h3>Nhà Giả Kim</h3>
+          <p class="price">80.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book3.jpg" alt="book3">
+          <h3>Đắc Nhân Tâm</h3>
+          <p class="price">90.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book4.jpg" alt="book4">
+          <h3>7 Thói Quen Hiệu Quả</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book5.jpg" alt="book5">
+          <h3>Hoàng Tử Bé</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book6.jpg" alt="book6">
+          <h3>Không Gia Đình</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book7.jpg" alt="book7">
+          <h3>Cách Nghĩ Để Thành Công</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book8.jpg" alt="book8">
+          <h3>Hành Trình Về Phương Đông</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book9.jpg" alt="book9">
+          <h3>Quẳng Gánh Lo Đi Và Vui Sống</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book10.jpg" alt="book10">
+          <h3>Hạt Giống Tâm Hồn</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book11.jpg" alt="book11">
+          <h3>7 Thói Quen Để Thành Đạt</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book12.jpg" alt="book12">
+          <h3>Đời Thay Đổi Khi Chúng Ta Đổi Thay</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book13.jpg" alt="book13">
+          <h3>Tội Ác Và Hình Phạt</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book14.jpg" alt="book14">
+          <h3>Trên Đường Băng</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book15.jpg" alt="book15">
+          <h3>Cuốn Theo Chiều Gió</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+
+        <div class="book-card">
+          <img src="images/book16.jpg" alt="book16">
+          <h3>Người Xa Lạ</h3>
+          <p class="price">110.000₫</p>
+          <button>Xem chi tiết</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Hotline: 0797240867 - Email: contact@gmail.com</p>
+      <p>Địa chỉ: Đường Nguyễn Huệ, P. Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+      <p>Chịu trách nhiệm: Lê Đăng Khoa</p>
+      <p> © 2024 Sachmoi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
